@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+.bg-grid {
+  background-image: radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.3) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+.card {
+  @apply bg-white/80 backdrop-blur rounded-2xl shadow-xl shadow-slate-200/60 border border-slate-100;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-full font-semibold transition-all duration-150;
+}
+
+.btn-primary {
+  @apply bg-ocean text-white hover:brightness-110;
+}
+
+.btn-ghost {
+  @apply bg-slate-100 text-slate-700 hover:bg-slate-200;
+}
+
+.badge {
+  @apply text-xs font-semibold px-2 py-1 rounded-full bg-slate-100 text-slate-600;
+}
